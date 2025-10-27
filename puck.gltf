@@ -29,14 +29,12 @@
 	],
 	"materials":[
 		{
-			"alphaMode":"BLEND",
-			"doubleSided":true,
 			"extras":{
 				"mmd_material":{
 					"specular_color":[
-						1.0,
-						1.0,
-						1.0
+						0.0,
+						0.0,
+						0.0
 					],
 					"ambient_color":[
 						1.0,
@@ -49,7 +47,12 @@
 						0.0
 					],
 					"alpha":1.0,
-					"shininess":0.0
+					"shininess":0.0,
+					"enabled_self_shadow":0,
+					"enabled_drop_shadow":0,
+					"enabled_self_shadow_map":0,
+					"is_double_sided":0,
+					"enabled_toon_edge":0
 				},
 				"sub_matl_data":{}
 			},
@@ -57,19 +60,21 @@
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
 					1,
-					0.31409043073654175,
-					0.02524385415017605,
+					0.5589045286178589,
+					0.057098593562841415,
 					1
 				],
 				"metallicFactor":0,
-				"roughnessFactor":0
+				"roughnessFactor":1
 			}
 		},
 		{
 			"alphaMode":"BLEND",
 			"doubleSided":true,
 			"extras":{
-				"mmd_material":{},
+				"mmd_material":{
+					"shininess":0.0
+				},
 				"sub_matl_data":{}
 			},
 			"name":"lambert2SG",
@@ -81,7 +86,7 @@
 					1
 				],
 				"metallicFactor":0,
-				"roughnessFactor":0
+				"roughnessFactor":1
 			}
 		}
 	],
